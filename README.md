@@ -69,6 +69,8 @@ mytext = ('Once upon a time, a boy named Timmy, went to the ' +
           random.choice(abandoned) +
           ' Coming to this realization, Timmy turned back around, and reluctantly turned down the quest... The end. ')
 
+# Below is the process
+
 # This will define the language. Other languages may be used as well, as long as they are supported by gTTS
 language = 'en'
 
