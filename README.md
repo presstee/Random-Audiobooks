@@ -6,14 +6,9 @@ from gtts import gTTS
 # This will give the output a random argument
 import random
 
-# Title: The Adventures of Timmy.
+# Title: The "Almost" Adventures of Timmy.
 
-when = ['Once upon a time,']
-# A
-who = ['boy']
-# named
-name = ['Timmy']
-# went to the
+# Once upon a time, a boy named Timmy, went to the
 went = ['skate park', 'carnival', 'mall', 'pond', 'art gallery', 'zoo', 'gym', 'bank', 'hospital', 'Nickelback concert',
         'block party', 'football game', 'mountain', 'beach', 'candy shop', 'library', 'movie theater', 'Disney World']
 # because he was looking for
@@ -29,11 +24,11 @@ speechless = ['kermit The Frog', 'Harry Potter', 'Homer Simpson', 'Gordon Ramsey
 appeared = ['frying pan.', 'cookie.', 'bottle of gatorade.', 'plastic bag.', 'baby.', 'Mtn Dew.', 'fork!',
             'letter.', 'pool stick!.', 'book.', 'head of lettuce.', 'carrot.', 'bowtie.', 'brownie.', 'basket.',
             'chalupa.', 'microphone.', 'Big Mac.', 'Nintendo Switch.']
-# Timmy
+# Then, Timmy
 then = ['started panicking.', 'remained calm.', 'started singing.', 'gracefully slipped on a banana.',
         'started rapping for no apparent reason.', 'started to cry.', 'started walking back slowly.',
-        'looked puzzled...']
-# "Hello Timmy.", he said.
+        'started to look puzzled...']
+# "Hello Timmy", he said.
 # Timmy Replied, "What do you want from me? And how do you know my name?"
 # "I have no time to explain" he said. "I have a quest for you Timmy. I need you to bring me a
 need = ['garden hose."', 'pickle jar."', 'soda."', 't-shirt."', 'bottle of water."', 'waffle."', 'pizza."',
@@ -42,21 +37,15 @@ need = ['garden hose."', 'pickle jar."', 'soda."', 't-shirt."', 'bottle of water
 # Timmy, seeming fairly puzzled, replied "Where on Earth do I find that?."
 # Timmy got no reply..
 # "Well okay, I guess I will get to it.", Timmy said to himself.
-# After a few short hours, Timmy found what he was looking for. But there was a problem.. Timmy realized
-abandoned = ['he was hungry.', 'his car insurance is about to expire.', 'he missed a call from his mother.',
-             'it was all a game.', 'it was too late.',
-             'that Redbull he drank earlier never actually gave him wings.',
-             'socks are just shoes for the house.', 'he could save big on his car insurance by switching Geico.',
-             'he had been bamboozled.', 'he was tired.']
-# Coming to this realization, Timmy abandoned the quest, and went home.
+# As Timmy was walking away, he stopped.. Timmy realized
+abandoned = ['he was hungry.', 'his extended warranty was almost expired.', 'he missed a call from his mother.',
+             'it was all a game.', 'it was passed his bedtime.','he had been bamboozled.', 'he was too tired to help.',
+             'socks are just shoes for the house.', 'he could save big on his car by insurance by switching Geico.'
+             'that Redbull he drank earlier never actually gave him wings.']
+# Coming to this realization, Timmy turned back around, and reluctantly turned down the quest... The end.
 
 # Below is the formula
-mytext = (random.choice(when) +
-          ' A ' +
-          random.choice(who) +
-          ' named ' +
-          random.choice(name) +
-          ' went to the ' +
+mytext = ('Once upon a time, a boy named Timmy, went to the ' +
           random.choice(went) +
           ' because he was looking for ' +
           random.choice(why) +
@@ -66,18 +55,18 @@ mytext = (random.choice(when) +
           random.choice(speechless) +
           ' appeared, holding what seemed to be a ' +
           random.choice(appeared) +
-          ' Timmy ' +
+          ' Then, Timmy ' +
           random.choice(then) +
-          ' "Hello Timmy." he said. ' +
+          ' "Hello Timmy" he said. ' +
           ' Timmy replied, "What do you want from me? And how do you know my name?" ' +
           ' "I have no time to explain" he said. "I have a quest for you Timmy. I need you to bring me a ' +
           random.choice(need) +
           ' Timmy, seeming fairly puzzled, replied "Where on Earth do I find that?" ' +
           ' Timmy got no reply. ' +
           ' "Well okay, I guess I will get to it.", Timmy said to himself. ' +
-          ' After a few short hours, Timmy found what he was looking for.But there was a problem..Timmy realized ' +
+          ' As Timmy was walking away, he stopped.. Timmy realized ' +
           random.choice(abandoned) +
-          ' Coming to this realization, Timmy abandoned the quest, and went home. ')
+          ' Coming to this realization, Timmy turned back around, and reluctantly turned down the quest... The end. ')
 
 # This will define the language. Other languages may be used as well, as long as they are supported by gTTS
 language = 'en'
