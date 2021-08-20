@@ -23,7 +23,7 @@ why = ['a job,', 'friends,', 'a can of soda,', 'a tutor, ', 'a mentor,', 'breakf
 happened = ['wallet.', 'spoon.', 'shoe.', 'strange cave.', 'cat.', 'leopard.', 'panda.', 'bumper sticker.', 'honda.',
             'weird looking mouse.', 'mirror.', 'shoe.', 'cave.', 'cat.', 'sock.', 'chicken coop.', 'pencil.']
 # Suddenly,
-speechless = ['Hermit', 'Harry Potter', 'Homer Simpson', 'Gordon Ramsey', 'Captain America',
+speechless = ['kermit The Frog', 'Harry Potter', 'Homer Simpson', 'Gordon Ramsey', 'Captain America',
               'Dwayne Johnson', 'Rick Sanchez', 'Elon Musk', 'A little old man', 'Peter Griffin', 'Florida Man']
 # appeared, holding what seemed to be a
 appeared = ['frying pan.', 'cookie.', 'bottle of gatorade.', 'plastic bag.', 'baby.', 'Mtn Dew.', 'fork!',
@@ -33,14 +33,14 @@ appeared = ['frying pan.', 'cookie.', 'bottle of gatorade.', 'plastic bag.', 'ba
 then = ['started panicking.', 'remained calm.', 'started singing.', 'gracefully slipped on a banana.',
         'started rapping for no apparent reason.', 'started to cry.', 'started walking back slowly.',
         'looked puzzled...']
-# "Hello, Timmy.", said the strange man.
+# "Hello Timmy.", he said.
 # Timmy Replied, "What do you want from me? And how do you know my name?"
-# "I have no time to explain. I have a quest for you, Timmy. I need you to bring me a
+# "I have no time to explain" he said. "I have a quest for you Timmy. I need you to bring me a
 need = ['garden hose."', 'pickle jar."', 'soda."', 't-shirt."', 'bottle of water."', 'waffle."', 'pizza."',
         'Redbull."', ' clock."', ' bag of chips."', 'bowl of cereal."', 'helicopter."', 'million dollars."',
         'sandwich."', 'helicopter."', 'pencil sharpener."', 'pair of socks."', 'letter opener."']
 # Timmy, seeming fairly puzzled, replied "Where on Earth do I find that?."
-# The man said nothing..
+# Timmy got no reply..
 # "Well okay, I guess I will get to it.", Timmy said to himself.
 # After a few short hours, Timmy found what he was looking for. But there was a problem.. Timmy realized
 abandoned = ['he was hungry.', 'his car insurance is about to expire.', 'he missed a call from his mother.',
@@ -68,12 +68,12 @@ mytext = (random.choice(when) +
           random.choice(appeared) +
           ' Timmy ' +
           random.choice(then) +
-          ' "Hello, Timmy.", said the strange man. ' +
+          ' "Hello Timmy." he said. ' +
           ' Timmy replied, "What do you want from me? And how do you know my name?" ' +
-          ' "I have no time to explain. I have a quest for you, Timmy. I need you to bring me a ' +
+          ' "I have no time to explain" he said. "I have a quest for you Timmy. I need you to bring me a ' +
           random.choice(need) +
-          ' Timmy, seeming fairly puzzled, replied "Where on Earth do I find that?." ' +
-          ' The man said nothing. ' +
+          ' Timmy, seeming fairly puzzled, replied "Where on Earth do I find that?" ' +
+          ' Timmy got no reply. ' +
           ' "Well okay, I guess I will get to it.", Timmy said to himself. ' +
           ' After a few short hours, Timmy found what he was looking for.But there was a problem..Timmy realized ' +
           random.choice(abandoned) +
