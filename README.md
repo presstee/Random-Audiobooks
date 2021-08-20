@@ -2,7 +2,7 @@
 
 # Allows for interaction with my operating system
 import os
-# this will import from Google Text-To-Speech. which will allow text output to be converted into an audio file.
+# This will import from Google Text-To-Speech. which will allow text output to be converted into an audio file.
 from gtts import gTTS
 # This will give the output a random argument
 import random
