@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
+# Allows for interaction with my operating system
 import os
 # this will import from Google Text-To-Speech. which will allow text output to be converted into an audio file.
 from gtts import gTTS
 # This will give the output a random argument
 import random
 
-# Title: The "Almost" Adventures of Timmy.
+# Title: The (Almost) Adventures of Timmy.
 
 # Once upon a time, a boy named Timmy, went to the
 went = ['skate park', 'carnival', 'mall', 'pond', 'art gallery', 'zoo', 'gym', 'bank', 'hospital', 'Nickelback concert',
@@ -80,5 +81,5 @@ output.save("output.mp3")
 # This will start output.mp3
 os.system("start output.mp3")
 
-# This will exit the script automatically.
-raise SystemExit
+# This will exit the script.
+quit()
