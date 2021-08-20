@@ -1,88 +1,83 @@
 #!/usr/bin/env python3
 
+import os
 # this will import from Google Text-To-Speech. which will allow text output to be converted into an audio file.
 from gtts import gTTS
-import os
-
 # This will give the output a random argument
 import random
 
-when = ['Once upon a time, ']
+# Title: The Adventures of Timmy.
 
-# an
-who = ['adventurer']
-
+when = ['Once upon a time,']
+# A
+who = ['boy']
 # named
 name = ['Timmy']
-
 # went to the
-went = ['skate park', 'carnival', 'mall', 'pond', 'art gallery','zoo', 'gym', 'bank', 'hospital', 'Nickelback concert',
-        'block party', 'football game', 'mountain', 'beach', 'candy shop', 'library', 'hospital', 'Nickelback concert']
-
-# to find
-why = ['a job, ', 'friends, ', ' a can of soda, ', 'a tutor, ', 'a mentor, ', 'breakfast, ', 'friends, ',
-       'a little joy, ', 'a musical instrument, ', 'a priest, ', 'a stick of butter, ', 'a mentor, ', 'breakfast, '] 
-
-# but instead, found a
-happened = ['wallet.', 'spoon.', 'shoe.', 'cave.', 'cat.', 'leopard.', 'panda.', 'bumper sticker.', 'honda accord.',
-            'weird looking man.', 'mirror.', 'shoe.', 'cave.', 'cat.', 'sock.', 'chicken coop.', 'pencil.']
-
+went = ['skate park', 'carnival', 'mall', 'pond', 'art gallery', 'zoo', 'gym', 'bank', 'hospital', 'Nickelback concert',
+        'block party', 'football game', 'mountain', 'beach', 'candy shop', 'library', 'movie theater', 'Disney World']
+# because he was looking for
+why = ['a job,', 'friends,', 'a can of soda,', 'a tutor, ', 'a mentor,', 'breakfast,', 'advice,', 'food,',
+       'quality alone time,', 'a musical instrument,', 'a stick of butter,', 'a mentor,', 'a pair of shoes,']
+# but instead, Timmy found a
+happened = ['wallet.', 'spoon.', 'shoe.', 'strange cave.', 'cat.', 'leopard.', 'panda.', 'bumper sticker.', 'honda.',
+            'weird looking mouse.', 'mirror.', 'shoe.', 'cave.', 'cat.', 'sock.', 'chicken coop.', 'pencil.']
 # Suddenly,
-speechless = [' A cave dweller', ' Harry Potter', ' Homer Simpson', ' Gordon Ramsey', ' Captain America',
-              ' Dwayne Johnson', ' Rick Sanchez', ' Elon Musk', ' A little old man', ' Peter Griffin', ' Florida Man']
+speechless = ['Hermit', 'Harry Potter', 'Homer Simpson', 'Gordon Ramsey', 'Captain America',
+              'Dwayne Johnson', 'Rick Sanchez', 'Elon Musk', 'A little old man', 'Peter Griffin', 'Florida Man']
+# appeared, holding what seemed to be a
+appeared = ['frying pan.', 'cookie.', 'bottle of gatorade.', 'plastic bag.', 'baby.', 'Mtn Dew.', 'fork!',
+            'letter.', 'pool stick!.', 'book.', 'head of lettuce.', 'carrot.', 'bowtie.', 'brownie.', 'basket.',
+            'chalupa.', 'microphone.', 'Big Mac.', 'Nintendo Switch.']
+# Timmy
+then = ['started panicking.', 'remained calm.', 'started singing.', 'gracefully slipped on a banana.',
+        'started rapping for no apparent reason.', 'started to cry.', 'started walking back slowly.',
+        'looked puzzled...']
+# "Hello, Timmy.", said the strange man.
+# Timmy Replied, "What do you want from me? And how do you know my name?"
+# "I have no time to explain. I have a quest for you, Timmy. I need you to bring me a
+need = ['garden hose."', 'pickle jar."', 'soda."', 't-shirt."', 'bottle of water."', 'waffle."', 'pizza."',
+        'Redbull."', ' clock."', ' bag of chips."', 'bowl of cereal."', 'helicopter."', 'million dollars."',
+        'sandwich."', 'helicopter."', 'pencil sharpener."', 'pair of socks."', 'letter opener."']
+# Timmy, seeming fairly puzzled, replied "Where on Earth do I find that?."
+# The man said nothing..
+# "Well okay, I guess I will get to it.", Timmy said to himself.
+# After a few short hours, Timmy found what he was looking for. But there was a problem.. Timmy realized
+abandoned = ['he was hungry.', 'his car insurance is about to expire.', 'he missed a call from his mother.',
+             'it was all a game.', 'it was too late.',
+             'that Redbull he drank earlier never actually gave him wings.',
+             'socks are just shoes for the house.', 'he could save big on his car insurance by switching Geico.',
+             'he had been bamboozled.', 'he was tired.']
+# Coming to this realization, Timmy abandoned the quest, and went home.
 
-# appeared, holding a
-appeared = [' frying pan!', ' cookie!', ' gatorade!', ' spoon!', ' plastic bag!',
-            ' baby!', ' will!', ' fork!', ' knife!', ' letter!', ' pool stick!', ' book!',
-            ' head of lettuce!', ' carrot!', ' tie!', ' brownie!', ' basket!',
-            ' snack!', ' microphone!', ' fish!', ' Nintendo Switch!']
-
-# Then, he
-then = [' spoke ever so softly.', ' started panicking.', ' remained calm.', ' started singing.',
-        ' started rapping until the adventurer complimented his skills.', ' gracefully slipped on a banana.',
-        ' started complimenting everything around him.', ' started to cry.', ' pondered for a moment...']
-
-# "I have a quest for you, young adventurer. I need you to bring me a
-
-need = [' random letter."', ' pickle."', ' soda."', ' t-shirt."', ' little bit of water."', ' waffle."', ' pizza."',
-        ' Redbull."', ' clock."', ' dog."', ' bowl of cereal."', ' helicopter."', ' million dollars."', ' sandwich."']
-
-# Timmy obliged, vowing to accomplish the task.
-
-# A few days later, the adventurer realized
-
-realized = [' he was hungry.', ' his car insurance has expired.', ' he forgot to call his mother.',
-            ' it was all a game.', ' it was too late.', ' Redbull never actually gave him wings.',
-            ' socks are just shoes for the house.', ' he could save big on his car insurance by switching Geico.',
-            ' racecar spelled backwards is racecar.', ' he forgot to feed his dog.']
-
-#***CHANGING THIS***
-
-# Below is the output. mytext will begin to choose arguments from the variables.
+# Below is the formula
 mytext = (random.choice(when) +
-          'an ' +
+          ' A ' +
           random.choice(who) +
           ' named ' +
           random.choice(name) +
           ' went to the ' +
           random.choice(went) +
-          ' to find ' +
+          ' because he was looking for ' +
           random.choice(why) +
-          'but instead, found a ' +
+          ' but instead, Timmy found a ' +
           random.choice(happened) +
-          ' Suddenly' +
+          ' Suddenly, ' +
           random.choice(speechless) +
-          ' appeared, holding a' +
+          ' appeared, holding what seemed to be a ' +
           random.choice(appeared) +
-          ' Then, he' +
+          ' Timmy ' +
           random.choice(then) +
-          ' "I have a quest for you, young adventurer.", he explained. ' +
-          '"I need you to bring me a' +
+          ' "Hello, Timmy.", said the strange man. ' +
+          ' Timmy replied, "What do you want from me? And how do you know my name?" ' +
+          ' "I have no time to explain. I have a quest for you, Timmy. I need you to bring me a ' +
           random.choice(need) +
-          ' The adventurer obliged, vowing to accomplish the task. ' +
-          'A few days later, the adventurer realized' +
-          random.choice(realized) +
-          ' Although he vowed to accomplish the task he had been given, he realized that this was far too important to ignore, and traveled back home.')
+          ' Timmy, seeming fairly puzzled, replied "Where on Earth do I find that?." ' +
+          ' The man said nothing. ' +
+          ' "Well okay, I guess I will get to it.", Timmy said to himself. ' +
+          ' After a few short hours, Timmy found what he was looking for.But there was a problem..Timmy realized ' +
+          random.choice(abandoned) +
+          ' Coming to this realization, Timmy abandoned the quest, and went home. ')
 
 # This will define the language. Other languages may be used as well, as long as they are supported by gTTS
 language = 'en'
